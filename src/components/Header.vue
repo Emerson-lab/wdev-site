@@ -16,7 +16,7 @@
         title="Abrir menu"
         v-on:click="openMenu"
       />
-      <div  v-on:click="closeMenu" id="menu-overlay" v-if="menuActive"></div>
+      <div v-on:click="closeMenu" id="menu-overlay" v-if="menuActive"></div>
 
       <div id="menu-items" :class="{ active: menuActive }">
         <img
