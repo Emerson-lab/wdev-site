@@ -2,12 +2,16 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/pages/Home";
 import Videos from "@/pages/Videos";
+import Sobre from "@/pages/Sobre";
+import Contato from "@/pages/Contato";
 
 Vue.use(VueRouter);
 
 const routes = [
   { path: "/", component: Home },
   { path: "/videos", component: Videos },
+  { path: "/Sobre", component: Sobre },
+  { path: "/Contato", component: Contato },
 ];
 
 const router = new VueRouter({

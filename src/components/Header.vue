@@ -26,10 +26,16 @@
           title="Abrir menu"
         />
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/videos">Vídeos</a></li>
-          <li><a href="/sobre">Sobre</a></li>
-          <li><a href="/contato">Contato</a></li>
+          <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
+          <li v-on:click="closeMenu">
+            <router-link to="/videos">Vídeos</router-link>
+          </li>
+          <li v-on:click="closeMenu">
+            <router-link to="/sobre">Sobre</router-link>
+          </li>
+          <li v-on:click="closeMenu">
+            <router-link to="/contato">Contato</router-link>
+          </li>
         </ul>
       </div>
     </nav>
